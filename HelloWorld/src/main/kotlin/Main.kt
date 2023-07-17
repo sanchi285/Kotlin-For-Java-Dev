@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     println(employee2.equals(employee1))
     println(employee2==employee4)
     employee4.name="Karim"
-    println(employee2.name)
+    println(employee2)
 }
 
 class Employee(var name: String, val id: Int){
@@ -23,5 +23,9 @@ class Employee(var name: String, val id: Int){
            return name==obj.name && id == obj.id;
        }
         return false;
+    }
+
+    override fun toString(): String {
+        return "Employee(name= $name, id=$id)"
     }
 }
