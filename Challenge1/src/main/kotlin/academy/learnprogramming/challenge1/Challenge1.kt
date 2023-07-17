@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
     if(any is String){
         println(any.toUpperCase())
     }
-    
+
     println(""" |1
         |11
                 |111
