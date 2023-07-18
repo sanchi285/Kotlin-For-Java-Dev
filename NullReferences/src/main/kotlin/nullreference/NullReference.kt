@@ -24,4 +24,13 @@ fun main (args: Array<String>){
     //safe cast Operator
     val str5: String?  = something as? String
     println(str5)
+
+    //I am sure that the variable can't be null
+    val str7 : String? = "This isn't null"
+    //val str8 : String = str7!!;
+    str7?.let { printText(it) }
+}
+
+fun printText(text: String){
+    println(text)
 }
