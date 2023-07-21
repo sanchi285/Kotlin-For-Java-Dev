@@ -29,6 +29,13 @@ fun main (args: Array<String>){
     val str7 : String? = "This isn't null"
     //val str8 : String = str7!!;
     str7?.let { printText(it) }
+
+    val nullableInts = arrayOfNulls<Int?>(5);
+    for (i in nullableInts){
+        println(i);
+    }
+
+
 }
 
 fun printText(text: String){
